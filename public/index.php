@@ -1,5 +1,5 @@
 <?php
-
+ini_set('max_execution_time', 0);
 use App\Kernel;
 use Symfony\Component\Dotenv\Dotenv;
 use Symfony\Component\ErrorHandler\Debug;
