@@ -1,0 +1,30 @@
+$bg-color: #2c4762;
+
+.master-header {
+  background-color: $bg-color;
+  .logo {
+    display: inline-block;
+    margin: 0.45em 0;
+    padding: 0.83em 0.3em;
+    a {
+      color: #FFFFFF;
+    }
+  }
+  #search-form {
+    display: inline-block;
+  }
+  .right-menu {
+    margin: 0.7em;
+    .item {
+      display: inline-block;
+      padding: 0.83em 0.95em;
+      color: #FFFFFF;
+      font-size: 1rem;
+      line-height: 1;
+      &:hover {
+        background-color: rgba(255,255,255,0.1);
+        text-decoration: none;
+      }
+    }
+  }
+}
