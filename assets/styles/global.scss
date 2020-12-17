@@ -1,4 +1,10 @@
+@import "~bootstrap/scss/bootstrap";
+
 $bg-color: #2c4762;
+
+body {
+  font-family: "OpenSans", sans-serif;
+}
 
 .master-header {
   background-color: $bg-color;
@@ -25,6 +31,63 @@ $bg-color: #2c4762;
         background-color: rgba(255,255,255,0.1);
         text-decoration: none;
       }
+    }
+  }
+}
+
+.master-body {
+  padding: 1em 0 0 0;
+  .feed-list {
+    margin-top: 1em !important;
+    .item {
+      border-top: 1px solid rgba(0,0,0,0.1);
+      padding: 0.5em;
+      &:first-child {
+        border-top-width: 0px;
+      }
+      .avatar {
+        display: block;
+        float: left;
+        margin-top: .3em;
+        margin-right: 1em;
+        vertical-align: middle;
+        width: 3em;
+        height: 3em;
+        border-radius: 500rem;
+        img {
+          width: 3em;
+          height: 3em;
+          border-radius: 500rem;
+        }
+      }
+      .content {
+        display: block;
+        margin-top: .1em;
+        margin-left: 4em;
+      }
+      .header {
+        a {
+          font-size: 1.3rem;
+          text-decoration: none;
+          color: #00b5ad;
+          font-weight: bold;
+          font-family: "Montserrat";
+        }
+      }
+      .detail {
+        margin-top: .3em;
+      }
+    }
+  }
+}
+
+.master-footer {
+  .links {
+    margin: 2em 2em;
+    a {
+      margin: 0 .7em;
+      font-size: .8em;
+      color: rgba(0,0,0,0.5);
     }
   }
 }
