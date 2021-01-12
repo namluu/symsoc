@@ -39,6 +39,11 @@ class User
      */
     private $avatar;
 
+    /**
+     * @ORM\Column(type="string", length=255)
+     */
+    private $password;
+
     public function __construct()
     {
         $this->posts = new ArrayCollection();
@@ -111,6 +116,18 @@ class User
     public function setAvatar(string $avatar): self
     {
         $this->avatar = $avatar;
+
+        return $this;
+    }
+
+    public function getPassword(): ?string
+    {
+        return $this->password;
+    }
+
+    public function setPassword(string $password): self
+    {
+        $this->password = $password;
 
         return $this;
     }

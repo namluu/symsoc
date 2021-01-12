@@ -43,6 +43,7 @@ class AppFixtures extends Fixture
                 $user->setName('user '.$i.$j);
                 $user->setEmail('user-'.$i.$j.'@example.com');
                 $user->setAvatar($avatars[$j]);
+                $user->setPassword(md5('password'));
                 $manager->persist($user);
 
                 $post->setUser($user);
