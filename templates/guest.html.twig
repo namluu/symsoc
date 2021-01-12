@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>{% block title %}Welcome!{% endblock %}</title>
+        <title>{% block title %}{% trans %}Login{% endtrans %}{% endblock %}</title>
         {% block stylesheets %}
             {{ encore_entry_link_tags('app') }}
         {% endblock %}
@@ -19,8 +19,6 @@
                     </div>
                     <div class="col-md-6">
                         <div class="right-menu float-right">
-                            <a class="item" href=""><strong>{% trans %}Home{% endtrans %}</strong></a>
-                            <a class="item" href=""><strong>{% trans %}Saved Post{% endtrans %}</strong></a>
                             <a class="item" href="{{ path('user_login') }}"><strong>{% trans %}Login{% endtrans %}</strong></a>
                         </div>
                     </div>
