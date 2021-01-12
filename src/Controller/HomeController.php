@@ -7,7 +7,7 @@ use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 use App\Entity\Post;
 
-class QuestionController extends AbstractController
+class HomeController extends AbstractController
 {
     /**
      * @Route("/")
@@ -16,7 +16,7 @@ class QuestionController extends AbstractController
     {
         $em = $this->getDoctrine()->getManager();
         $posts = $em->getRepository(Post::class)->findAll();
-        return $this->render('question/homepage.html.twig', [
+        return $this->render('home/index.html.twig', [
             'posts' => $posts
         ]);
     }
